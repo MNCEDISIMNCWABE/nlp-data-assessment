@@ -19,18 +19,18 @@
 
 ### Run Using Docker (Recommended)
 
-1. **Clone the repository**:
+#### Clone the repository**:
    - ```git clone https://github.com/MNCEDISIMNCWABE/nlp-data-assessment.git```
    - ```cd nlp-data-assessment```
   
-2. ## Data Setup
+#### Data Setup
 - Place `patient_behavior_data.csv` file in the project root directory after cloning the repo
 - Expected CSV columns: patient_id,name,surname,gender,medication,dose,bmi,weight,height,systolic,diastolic,concentration,impulsivity,distractibility,hyperactivity,sleep,mood,appetite,doctor_notes
 
-3. **Build the Docker image**:
+#### Build the Docker image:
 ```docker build -t nlp-app .```
 
-2. **Run the Docker Container**:
+#### Run the Docker Container
 ```docker run nlp-app```
 
 
