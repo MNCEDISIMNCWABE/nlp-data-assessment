@@ -9,7 +9,6 @@
 ## Setup Instructions
 
 ### Project Structure
-.
 ├── Dockerfile                  
 ├── README.md                  
 ├── requirements.txt           
