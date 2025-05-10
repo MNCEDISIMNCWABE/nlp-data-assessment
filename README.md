@@ -9,7 +9,7 @@
 ## Setup Instructions
 
 ### Project Structure
-/nlp-data-assessment
+../nlp-data-assessment
 ├── Dockerfile                  
 ├── README.md                  
 ├── requirements.txt           
