@@ -12,7 +12,7 @@
 <img width="760" alt="image" src="https://github.com/user-attachments/assets/9fd12a40-c333-4d40-8011-3945d3d9115b" />
 
 
-> **Note:** The LSTM and CLSTM model are commented out in the model_training.py file for the Docker build as these models generally require significant computational resources for faster training. I trained them on Google Colab for faster training with GPU acceleration. You can uncomment these functions `clstm_model` and `lstm_model` in `model_training.py` file if you have adequate computational resources. Link to the Google colab file: https://colab.research.google.com/drive/18U4zCa04L9s8w2GJqoSUBykQDqwwdNW3#scrollTo=OQknX1uGyrAx&uniqifier=1
+> **Note:** The LSTM and CLSTM models are commented out in the model_training.py file for the Docker build as these models generally require significant computational resources for faster training. I trained them on Google Colab for faster training with GPU acceleration. You can uncomment these functions `clstm_model` and `lstm_model` in `model_training.py` file if you have adequate computational resources. Link to the Google colab file: https://colab.research.google.com/drive/18U4zCa04L9s8w2GJqoSUBykQDqwwdNW3#scrollTo=OQknX1uGyrAx&uniqifier=1
 
 ## Run Using Docker...
 
