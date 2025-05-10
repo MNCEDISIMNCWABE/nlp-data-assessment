@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Docker - If on MacOS Install Docker 4.37.2 or latest from https://docs.docker.com/desktop/release-notes/#4372 to avoid having Docker startup issues
+- Docker - If you are on MacOS, install Docker 4.37.2 or latest from https://docs.docker.com/desktop/release-notes/#4372 to avoid having Docker startup issues
 - Python 3.9 
 - Git - Install from https://git-scm.com/downloads
 
