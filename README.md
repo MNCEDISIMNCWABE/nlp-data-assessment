@@ -11,6 +11,11 @@
 ### Project Structure
 <img width="760" alt="image" src="https://github.com/user-attachments/assets/9fd12a40-c333-4d40-8011-3945d3d9115b" />
 
+
+> **Note:** The LSTM and CLSTM model are commented out in the model_training.py for the Docker build as these models require significant computational resources. I trained these models on Google Colab for faster training with GPU acceleration. You can uncomment these function `clstm_model` and `lstm_model` in `model_training.py` if you have adequate computational resources.
+
+## Run Using Docker...
+
 ### Run Using Docker (Recommended)
 
 #### Clone the repository:
