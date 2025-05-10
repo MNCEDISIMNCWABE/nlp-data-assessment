@@ -39,16 +39,17 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
 # %%
-def read_data(path_to_csv_file, delimiter=None):
+def read_data(path_to_csv_file=None, delimiter=None):
     '''
-    Reads csv file from specified path
+    Reads csv file from specified path or default location
     '''
-    df = pd.read_csv(path_to_csv_file, delimiter=delimiter)
-
+    default_path = '/app/patient_behavior_data.csv'  
+    path = path_to_csv_file if path_to_csv_file else default_path
+    df = pd.read_csv(path, delimiter=delimiter)
     return df
 
-# call function to import data  - UPDATE PATH HERE TO RUN MODEL
-df_patient = read_data('/Users/mncedisimncwabe/Downloads/patient_behavior_data.csv', delimiter=";")
+# Call function - no hardcoded path needed
+df_patient = read_data(delimiter=";")
 df_patient.head()
 
 # %%
@@ -268,8 +269,9 @@ def train_test_split_df(X,y):
     return X_train, X_test, y_train, y_test
 
 X_train, X_test, y_train, y_test = train_test_split_df(X,y)
-print(X_train.shape,y_train.shape)
-print(X_test.shape,y_test.shape)
+print(f"\n=== Data Split - concentration prediction ===")
+print("X_train, y_train shape:", X_train.shape,y_train.shape)
+print("X_test, y_test shape:", X_test.shape,y_test.shape)
 
 # %%
 def model_application(X_train,y_train,optimiser):
@@ -326,16 +328,16 @@ def model_predict(X_test):
     return y_pred
 
 y_pred = model_predict(X_test)
-print('Training Accuracy Score(%):',rf_model.score(X_train,y_train)*100)
-print('Test Accuracy Score(%):',rf_model.score(X_test,y_test)*100)
+print('Training Accuracy Score - concentration pred (%):',rf_model.score(X_train,y_train)*100)
+print('Test Accuracy Score - concentration pred (%):',rf_model.score(X_test,y_test)*100)
 
 # %%
 def generate_performance_metrics(y_test, y_pred, model_name=""):
     score = accuracy_score(y_test, y_pred)
     if model_name:
-        print(f"\n=== {model_name} Performance ===")
+        print(f"\n=== {model_name} Performance - concentration prediction ===")
     print('Model Accuracy:', score)
-    print('Classification Report:\n', classification_report(y_test, y_pred, zero_division=0))
+    print('Classification Report - concentration prediction :\n', classification_report(y_test, y_pred, zero_division=0))
 
     return score
 
