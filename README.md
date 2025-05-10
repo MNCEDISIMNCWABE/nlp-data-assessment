@@ -31,3 +31,8 @@
 ```docker run nlp-app```
 
 
+Expected output:
+<img width="995" alt="image" src="https://github.com/user-attachments/assets/6754c6ab-5d17-4b4e-bfd4-aa07ec97688d" />
+<img width="781" alt="image" src="https://github.com/user-attachments/assets/86a45c98-2764-42f5-b80d-57da23cb1644" />
+
+
