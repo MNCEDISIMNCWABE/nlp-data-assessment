@@ -559,5 +559,3 @@ generate_performance_metrics(y_test, y_pred_rf, "Random Forest")
 #     return model, history, y_test_original, y_pred_test_original
 
 # model, history, y_test_original, y_pred_test_original = clstm_model(patient_df_processed)
-
-
