@@ -9,11 +9,12 @@
 ## Setup Instructions
 
 ### Project Structure
+/nlp-data-assessment
 ├── Dockerfile                  
 ├── README.md                  
 ├── requirements.txt           
 ├── model_training.py  
-├──model_training.ipynb
+├── model_training.ipynb
 └── patient_behavior_data.csv   # data (excluded from repo, add to project root directory after cloning)
 
 ### Run Using Docker (Recommended)
