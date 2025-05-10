@@ -19,7 +19,7 @@
 
 ### Run Using Docker (Recommended)
 
-#### Clone the repository**:
+#### Clone the repository:
    - ```git clone https://github.com/MNCEDISIMNCWABE/nlp-data-assessment.git```
    - ```cd nlp-data-assessment```
   
