@@ -48,7 +48,6 @@ def read_data(path_to_csv_file=None, delimiter=None):
     df = pd.read_csv(path, delimiter=delimiter)
     return df
 
-# Call function - no hardcoded path needed
 df_patient = read_data(delimiter=";")
 df_patient.head()
 
